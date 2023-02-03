@@ -1,144 +1,206 @@
-.contenant
-{
-    max-width: 375px;
+.contenant {
     margin: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-h2
-{
-    font-family: 'shrikhand',sans-serif;
-    font-size: medium;
+
+a:link {
+    text-decoration: none;
 }
-.logo
-{
+
+h3 {
+    font-family: 'roboto',sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'shrikhand',sans-serif;
+    font-family: 'shrikhand', sans-serif;
 }
+
 /*barre de recherche*/
 .barre-de-recherche {
 
     display: flex;
     justify-content: center;
     border: 0.5px solid #F2F2F2;
-    background-color:#F2F2F2;
+    background-color: #d3d3d3;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 5%;
     width: 100%;
     height: 100%;
+    box-shadow:inset 0px 5px #c2c2c2;
 }
-.icone {
-    padding-left: 20%;
+
+.formulaire
+{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 50px;
 	height: 50px;
+	border-radius: 10px 0px 0px 10px;
 }
 .recherche {
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-	width:100%;
-	font-size: 18px;
-	color: black;
-	font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 375px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
     border: none;
-    background-color:#F2F2F2
+    background-color: #d3d3d3;
+    box-shadow:inset 0px 5px #c2c2c2;
 }
-.reserver
-{
+
+.reserver {
     margin-top: 0px;
     width: 100%;
-    height: 200px;
-    background-color:#f2f2f263;
+    height: 250px;
+    background-color: #f2f2f2;
 }
-.titre
-{
+
+.titre {
     text-align: center;
-    font-size: x-large;
     font-weight: bold;
     margin-top: 0%;
-}
-.explorer
-{
+    padding-top: 5%;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+.découvrer {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+.explorer {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10%;
     display: flex;
-    align-items: center;   
-    border: 0.5px solid black;
-    border-radius: 15px 15px 15px 15px;
-    background-color: magenta;
-    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    width: 200px;
     height: 40px;
     color: white;
+    font-weight: bold;
 }
-.Navigation
-{
+
+.Navigation {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.Choix
-{
+
+.fonctionnement {
+    width: 100%;
+}
+
+.Choix {
     width: 300px;
     height: 50px;
     background-color: #F2F2F2;
-    border: 0.5px black solid;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content:space-between;
     font-weight: bold;
     margin-top: 30px;
     flex-direction: row;
 }
-.Nombres
-{
+
+.Nombres {
+    margin-left: -10px;
+    margin-right: 20px;
     width: 20px;
     height: 20px;
     display: flex;
     border-radius: 25px 25px 25px 25px;
-    border: 0.5px black solid;
-    font-size:small;
-    background-color:purple;
+    font-size: small;
+    background-color: #9356DC;
     color: white;
     align-items: center;
     justify-content: center;
 }
-.Onglet
-{
+
+.TextChoix {
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.Onglet {
     font-size: large;
     color: grey;
 }
-.CubeRestaurant
-{
+
+.CubeRestaurant {
     width: 300px;
-    height: 200px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 15px 15px 15px 15px;
     border: 0.5px black solid;
-    margin-top: 4%;
+    margin-top: 10%;
 }
-.PhotoRestaurants
-{
+
+.PhotoRestaurants {
     width: 100%;
-    height: 75%;
+    height: 140px;
     border-radius: 15px 15px 0px 0px;
     margin-bottom: 0%;
     object-fit: cover;
-    
+
 }
 
+.TextRestaurant p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    width: 100%;
+    color: black;
+}
 
+.TextRestaurant h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 2%;
+    width: 100%;
+    color: black;
+}
 
+.Footer {
+    padding-top: 5%;
+    margin-top: 10%;
+    height: 200px;
+    width: 100%;
+    border: 0.5px black solid;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.TextFooter {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.TitreFooter {
+    font-size: 20px;
+    font-family: "shrikhand";
+    color: white;
+    margin-left: 20px;
+}
