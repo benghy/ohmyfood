@@ -100,6 +100,13 @@ h3 {
     color: white;
     font-weight: bold;
 }
+.navigateur:hover>.Choix{
+    background-color: #e6c7ff;
+    color: black;
+}
+.Onglet:hover{
+color: #9356DC;    
+}
 
 .Navigation {
     display: flex;
@@ -142,6 +149,7 @@ h3 {
     margin-left: 20px;
     font-weight: bold;
     font-family: sans-serif;
+    color: black;
 }
 
 .Onglet {
@@ -165,6 +173,16 @@ h3 {
     border-radius: 15px 15px 0px 0px;
     margin-bottom: 0%;
     object-fit: cover;
+}
+.nouveau 
+{
+    border: 0.5px black solid;
+    width: 70px;
+    height: 20px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    color: green; 
 
 }
 
@@ -186,14 +204,16 @@ h3 {
 .CoeurVide
 {
     float: right;
-    margin-right: 10px;
     font-size: large;
+    margin-right: 10px;
 }
 .CoeurPlein
 {
-    position: absolute;
+    height: 20px;
+    float: right;
     margin-right: 10px;
     font-size: large;
+    
 }
 footer{
     width: 100%;

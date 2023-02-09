@@ -1,0 +1,126 @@
+.contenant {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'roboto',sans-serif;
+    font-weight: bold;
+}
+header
+{
+    width: 100%;
+}
+
+.logo {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'shrikhand', sans-serif;
+}
+.fond
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.FondCarte
+{
+    border: 0.5px black solid;
+    border-radius: 25px 25px 0px 0px;
+    height: 100%;
+    width: 100%;
+	background-color: #F2F2F2;
+}
+.TitreFrançaise
+{
+    font-size: x-large;
+    font-family: 'shrikhand', sans-serif;
+    margin-left: 5%;
+}
+.SousTitre
+{
+    width: 100%;
+    text-decoration: underline green;
+}
+.menu
+{
+    width: 350px;
+    height: 60px;
+    border-radius: 15px;
+    margin: auto;
+    background-color: white;
+}
+.TitreMenu
+{
+    font-weight: bold;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    margin-left: 5%;
+}
+.DetailMenu
+{
+    font-size: small;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.PrixMenu
+{
+    font-weight: bold;
+    float: right;
+    margin-top: -5%;
+    margin-right: 5%;
+}
+.commander
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+}
+.Footer {
+    padding-top: 5%;
+    margin-top: 0%;
+    height: 200px;
+    width: 100%;
+    border: 0.5px black solid;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.TextFooter {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.TitreFooter {
+    font-size: 20px;
+    font-family: "shrikhand";
+    color: white;
+    margin-left: 20px;
+}
