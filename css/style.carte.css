@@ -6,6 +6,7 @@
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     width: 100%;
+	background-color: #F2F2F2;
 }
 
 a:link {
@@ -19,14 +20,26 @@ h3 {
 header
 {
     width: 100%;
-}
-
-.logo {
+    display: flex;
+    flex-direction: row;
     margin-top: 5%;
+}
+.retour
+{
+    font-size: large;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: 'shrikhand', sans-serif;
+    color: black;
+}
+.TitreHeader
+{
+font-size: 30px;
+font-family: "shrikhand";
+margin-bottom: 5px;
+margin-top: 0px;
 }
 .fond
 {
@@ -40,7 +53,27 @@ header
     border-radius: 25px 25px 0px 0px;
     height: 100%;
     width: 100%;
+    position: relative;
+    bottom: 40px;
 	background-color: #F2F2F2;
+    position: relative;
+}
+.CoeurVideCarte
+{
+
+    font-size: 20px;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    
+}
+.CoeurPleinCarte
+{
+
+    font-size: 20px;
+    position: absolute;
+    right: 35px;
+    top:35px;
 }
 .TitreFrançaise
 {
@@ -52,6 +85,7 @@ header
 {
     width: 100%;
     text-decoration: underline green;
+    margin-left: 3%;
 }
 .menu
 {
@@ -93,7 +127,7 @@ header
     align-items: center;
     border-radius: 25px;
     background: linear-gradient(#FF79DA, #9356DC);
-    width: 200px;
+    width: 170px;
     height: 40px;
     color: white;
     font-weight: bold;
@@ -102,7 +136,7 @@ header
 footer{
     width: 100%;
 }
-.Footer {
+.FinDePage {
     padding-top: 5%;
     margin-top: 0%;
     height: 200px;
