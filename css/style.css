@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    max-width: 375px;
 }
 
 a:link {
@@ -238,6 +239,16 @@ margin-top: 0px;
     right: 20px;
     top:20px;
     opacity: 0;
+    transition: all;
+    transition-duration: 2s;
+}
+.CoeurPlein:hover
+{
+    opacity: 1;
+    color: transparent;
+    background: linear-gradient(#9356DC,#FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 footer{
     width: 100%;

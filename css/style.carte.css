@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
     width: 100%;
 	background-color: #F2F2F2;
+    max-width: 375px;
 }
 
 a:link {
@@ -77,6 +78,16 @@ margin-top: 0px;
     right: 35px;
     top:35px;
     opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.CoeurPleinCarte:hover
+{
+    opacity: 1;
+    color: transparent;
+    background: linear-gradient(#9356DC,#FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 .TitreFrançaise
 {
@@ -98,6 +109,49 @@ margin-top: 0px;
     border-radius: 15px;
     margin: auto;
     background-color: white;
+    animation-name: defilement;
+    animation-duration: 3s;
+    transform: scale(0);
+    animation-fill-mode: both;
+
+}
+@keyframes defilement {
+    0% {
+              transform: scale(0);
+    }
+    100% {
+              transform: scale(1);
+    }
+  }
+.anime1{
+    animation-delay: 0.1s;
+}
+.anime2{
+    animation-delay: 0.5s;
+}
+.anime3{
+    animation-delay: 1s;
+}
+.anime4{
+    animation-delay: 1.5s;
+}
+.anime5{
+    animation-delay: 2s;
+}
+.anime6{
+    animation-delay: 2.5s;
+}
+.anime7{
+    animation-delay: 3s;
+}
+.anime8{
+    animation-delay: 3.5s;
+}
+.anime9{
+    animation-delay: 4s;
+}
+.anime10{
+    animation-delay: 4.5s;
 }
 .TitreMenu
 {
