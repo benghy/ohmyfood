@@ -7,7 +7,6 @@
     font-family: 'Roboto', sans-serif;
     width: 100%;
 	background-color: #F2F2F2;
-    max-width: 375px;
 }
 
 a:link {
@@ -39,7 +38,7 @@ header
     align-items: center;
     color: black;
 }
-.TitreHeader
+.titreHeader
 {
 font-size: 30px;
 font-family: "shrikhand";
@@ -110,18 +109,24 @@ margin-top: 0px;
     margin: auto;
     background-color: white;
     animation-name: defilement;
-    animation-duration: 3s;
-    transform: scale(0);
+    animation-duration: 1s;
     animation-fill-mode: both;
+    transform: translateY(15px);
+    opacity: 0;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
 
 }
+
 @keyframes defilement {
     0% {
-              transform: scale(0);
+              transform: translateY(15px);
+              opacity: 0;
     }
     100% {
-              transform: scale(1);
+              transform: translate(0px);
+              opacity: 1;
     }
+    
   }
 .anime1{
     animation-delay: 0.1s;
