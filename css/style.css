@@ -24,24 +24,39 @@ header{
 }
 .chargement
 {
-    border: 5px solid #FF79DA #9356DC;
-    background: linear-gradient(#FF79DA, #9356DC);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation: spin 3s linear infinite;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background: #ffffff;
+    height: 100%;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 200ms forwards;
+    animation-delay: 3s;
 }
-@keyframes spin
+.loader
+{
+    height: 100px;
+    width: 100px;
+    border-right: 5px solid #FF79DA;
+    border-top: 5px solid #9356DC;
+    border-radius: 50%;
+    animation: rotation 1s infinite ease-in-out;
+}
+@keyframes disappear
 {
     0%
     {
-        transforme: rotate (0deg)
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
     }
     100%{
         transform: rotate(360deg);

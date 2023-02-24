@@ -6,7 +6,7 @@
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     width: 100%;
-	background-color: #F2F2F2;
+    background-color: #F2F2F2;
 }
 
 a:link {
@@ -14,22 +14,22 @@ a:link {
 }
 
 h3 {
-    font-family: 'roboto',sans-serif;
+    font-family: 'roboto', sans-serif;
     font-weight: bold;
 }
-header
-{
+
+header {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 5%;
 }
-.Listeplats
-{
+
+.Listeplats {
     width: 100%;
 }
-.retour
-{
+
+.retour {
     font-size: large;
     margin-left: 10%;
     margin-right: 15%;
@@ -38,71 +38,72 @@ header
     align-items: center;
     color: black;
 }
-.titreHeader
-{
-font-size: 30px;
-font-family: "shrikhand";
-margin-bottom: 5px;
-margin-top: 0px;
+
+.titreHeader {
+    font-size: 30px;
+    font-family: "shrikhand";
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
-.fond
-{
+
+.fond {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-.FondCarte
-{
+
+.FondCarte {
     border-radius: 25px 25px 0px 0px;
     height: 100%;
     width: 100%;
     bottom: 50px;
-	background-color: #F2F2F2;
+    background-color: #F2F2F2;
     position: relative;
 }
-.CoeurVideCarte
-{
+
+.CoeurVideCarte {
 
     font-size: 20px;
     position: absolute;
     right: 35px;
     top: 35px;
-    
+
 }
-.CoeurPleinCarte
-{
+
+.CoeurPleinCarte {
 
     font-size: 20px;
     position: absolute;
     right: 35px;
-    top:35px;
+    top: 35px;
     opacity: 0;
     transition-property: all;
     transition-duration: 2s;
 }
-.CoeurPleinCarte:hover
-{
+
+.CoeurPleinCarte:hover {
     opacity: 1;
     color: transparent;
-    background: linear-gradient(#9356DC,#FF79DA);
+    background: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
     -webkit-background-clip: text;
 }
-.TitreFrançaise
-{
+
+.TitreFrançaise {
     font-size: x-large;
     font-family: 'shrikhand', sans-serif;
     margin-left: 5%;
     padding-top: 7%;
 }
-.SousTitre
-{
+
+.SousTitre {
     width: 100%;
     text-decoration: underline #99e2d0;
     margin-left: 3%;
 }
-.menu
-{
+
+.menu {
+    position: relative;
     width: 350px;
     height: 60px;
     border-radius: 15px;
@@ -113,78 +114,136 @@ margin-top: 0px;
     animation-fill-mode: both;
     transform: translateY(15px);
     opacity: 0;
-    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-top: 20px;
+}
 
+.menu:hover .deroulant {
+    right: 0;
+}
+
+.menu:hover .valid {
+    transform: rotate(360deg);
+}
+
+.menu:hover .PrixMenu {
+    transform: translateX(-45px);
+}
+
+.menu:hover .DetailMenu {
+    width: 60%;
+    text-overflow: ellipsis;
 }
 
 @keyframes defilement {
     0% {
-              transform: translateY(15px);
-              opacity: 0;
+        transform: translateY(15px);
+        opacity: 0;
     }
+
     100% {
-              transform: translate(0px);
-              opacity: 1;
+        transform: translate(0px);
+        opacity: 1;
     }
-    
-  }
-.anime1{
+
+}
+
+.anime1 {
     animation-delay: 0.1s;
 }
-.anime2{
+
+.anime2 {
     animation-delay: 0.5s;
 }
-.anime3{
+
+.anime3 {
     animation-delay: 1s;
 }
-.anime4{
+
+.anime4 {
     animation-delay: 1.5s;
 }
-.anime5{
+
+.anime5 {
     animation-delay: 2s;
 }
-.anime6{
+
+.anime6 {
     animation-delay: 2.5s;
 }
-.anime7{
+
+.anime7 {
     animation-delay: 3s;
 }
-.anime8{
+
+.anime8 {
     animation-delay: 3.5s;
 }
-.anime9{
+
+.anime9 {
     animation-delay: 4s;
 }
-.anime10{
+
+.anime10 {
     animation-delay: 4.5s;
 }
-.TitreMenu
-{
+
+.TitreMenu {
     font-weight: bold;
     margin-bottom: 0%;
-    padding-top: 2%;
+    padding-top: 0%;
     margin-left: 5%;
     overflow: hidden;
-  text-overflow: ellipsis; 
+    text-overflow: ellipsis;
+    margin-top: 10px;
 }
-.DetailMenu
-{
+
+.DetailMenu {
+    width: 100%;
     font-size: small;
     margin-bottom: 0%;
     margin-left: 5%;
     margin-top: 2%;
+    transition: all;
+    transition-duration: 1s;
     overflow: hidden;
-  text-overflow: ellipsis; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.PrixMenu
-{
+
+.PrixMenu {
     font-weight: bold;
     float: right;
     margin-top: -5%;
     margin-right: 5%;
+    transition: all;
+    transition-duration: 1s;
 }
-.commander
-{
+
+.deroulant {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    right: -55px;
+    top: 0;
+    background-color: #99e2d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.valid {
+    font-size: x-large;
+    color: white;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.commander {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 10%;
@@ -199,9 +258,10 @@ margin-top: 0px;
     font-weight: bold;
 }
 
-footer{
+footer {
     width: 100%;
 }
+
 .FinDePage {
     padding-top: 5%;
     margin-top: 0%;
