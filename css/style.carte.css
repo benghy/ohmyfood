@@ -22,7 +22,8 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    background-color: white;
+    justify-content: center;
 }
 
 .Listeplats {
@@ -31,12 +32,13 @@ header {
 
 .retour {
     font-size: large;
-    margin-left: 10%;
-    margin-right: 15%;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     color: black;
+    position: absolute;
+    top: 15px ;
+    left: 60px;
 }
 
 .titreHeader {
@@ -244,8 +246,8 @@ header {
 }
 
 .commander {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10%;
     display: flex;
     justify-content: center;
@@ -283,4 +285,14 @@ footer {
     font-family: "shrikhand";
     color: white;
     margin-left: 20px;
+}
+@media all and (min-width:768px) and (max-width: 992px){
+
+    .TitreFrançaise
+    {
+        text-align: center;
+    }
+    .FinDePage{
+        text-align: center;
+    }
 }
