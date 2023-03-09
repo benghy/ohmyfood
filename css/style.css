@@ -164,28 +164,28 @@ margin-top: 0px;
     opacity: 0.9;
     box-shadow: 5px 5px 15px 0px rgba(0,0,0,1);
 }
-.navigateur:hover>.Choix{
+.lienNavigation:hover>.choix{
     background-color: #e6c7ff;
     color: black;
 }
-.navigateur:hover i
+.lienNavigation:hover i
 {
     color: #9356DC;
 }
-.Navigateur2{
+.ongletNavigation{
     width: 90%;
 }
-.Navigation {
+.navigation{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.fonctionnement {
+.titreNavigation {
     width: 100%;
 }
 
-.Choix {
+.choix {
     width: 300px;
     height: 50px;
     background-color: #F2F2F2;
@@ -199,7 +199,7 @@ margin-top: 0px;
     box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
 }
 
-.Nombres {
+.nombres {
     margin-left: -10px;
     margin-right: 20px;
     width: 20px;
@@ -212,14 +212,14 @@ margin-top: 0px;
     justify-content: center;
 }
 
-.TextChoix {
+.textChoix {
     margin-left: 20px;
     font-weight: bold;
     font-family: sans-serif;
     color: black;
 }
 
-.Onglet {
+.onglet {
     font-size: large;
     color: grey;
 }
@@ -227,7 +227,7 @@ margin-top: 0px;
     width: 90%;
     margin: auto;
 }
-.CubeRestaurant {
+.cubeRestaurant {
     width: 300px;
     height: 100%;
     display: flex;
@@ -239,7 +239,7 @@ margin-top: 0px;
     box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
 }
 
-.PhotoRestaurants {
+.photoRestaurants {
     width: 100%;
     height: 140px;
     border-radius: 15px 15px 0px 0px;
@@ -260,7 +260,7 @@ margin-top: 0px;
 
 }
 
-.TextRestaurant p {
+.textRestaurant p {
     margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 2%;
@@ -268,17 +268,17 @@ margin-top: 0px;
     color: black;
 }
 
-.TextRestaurant h3 {
+.textRestaurant h3 {
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 2%;
     width: 100%;
     color: black;
 }
-.TextRestaurant{
+.textRestaurant{
     position: relative;
 }
-.CoeurVide
+.coeurVide
 {
 
     font-size: 20px;
@@ -287,7 +287,7 @@ margin-top: 0px;
     top: 20px;
     
 }
-.CoeurPlein
+.coeurPlein
 {
 
     font-size: 20px;
@@ -298,7 +298,7 @@ margin-top: 0px;
     transition: all;
     transition-duration: 2s;
 }
-.CoeurPlein:hover
+.coeurPlein:hover
 {
     opacity: 1;
     color: transparent;
@@ -309,7 +309,7 @@ margin-top: 0px;
 footer{
     width: 100%;
 }
-.Footer {
+.footer {
     padding-top: 5%;
     margin-top: 10%;
     height: 200px;
@@ -319,13 +319,13 @@ footer{
     color: white;
 }
 
-.TextFooter {
+.textFooter {
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.TitreFooter {
+.titreFooter {
     font-size: 20px;
     font-family: "shrikhand";
     color: white;
@@ -339,10 +339,10 @@ footer{
     {
         width: 100%;
     }
-    .fonctionnement{
+    .titreNavigation{
         text-align: center;
     }
-     .Navigateur2{
+     .ongletNavigation{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -360,12 +360,47 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
-    .CubeRestaurant
+    .cubeRestaurant
     {
         margin-right: auto;
         margin-left: auto;
     }
-    .Footer{
+    .footer{
         text-align: center;
     }
 }
+@media all and (min-width: 993px){
+    .blocRestaurant{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    .cubeRestaurant
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+        .ongletNavigation{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-left:auto;
+            margin-right: auto;
+         }
+         .titreNavigation{
+            text-align: center;
+         }
+         .titreRestaurant{
+            text-align: center;
+         }
+         .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+         }
+    }
