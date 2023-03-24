@@ -306,6 +306,7 @@ header {
     opacity: 0;
     transition: all;
     transition-duration: 2s;
+    
 }
 
 .coeurPlein:hover {
@@ -313,7 +314,7 @@ header {
     color: transparent;
     background: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
-    
+    -webkit-background-clip: text;
 }
 
 footer {
