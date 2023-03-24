@@ -88,7 +88,7 @@ header {
     color: transparent;
     background: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
-    -webkit-background-clip: text;
+    
 }
 
 .titreFrançaise {
@@ -129,11 +129,11 @@ header {
     transform: rotate(360deg);
 }
 
-.menu:hover .PrixMenu {
+.menu:hover .prixMenu {
     transform: translateX(-45px);
 }
 
-.menu:hover .DetailMenu {
+.menu:hover .detailMenu {
     width: 60%;
     text-overflow: ellipsis;
 }
